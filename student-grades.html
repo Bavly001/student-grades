@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+      <title>Grades Calculations</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+      <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body>
+      <div class="bg-black">
+            <div class="bg-image" style="background-image: url('https://ejust.edu.eg/newsite/images/slider/55.jpg');
+                   height: 100vh">
+            </div>
+      </div>
+      <div class="container-fluid content">
+            <div class="container text-white vh-100 d-flex justify-content-center align-items-center flex-column">
+                  <div class="row appear" id="first-row">
+                        <h1 class="display-2 mb-5" id="header">Check your <span class="text-primary">LEVEL</span></h1>
+                  </div>
+                  <div class="row row-cols-4 justify-content-center align-items-center vw-100 mt-5" id="first-screen">
+                        <div class="col">
+                              <div class="form-check d-flex justify-content-center align-items-center">
+                                    <input class="form-check-input mx-2" type="radio" value="1" name="year" id="year1">
+                                    <label class="form-check-label" for="year1">
+                                          1<sup>st</sup> Year
+                                    </label>
+                              </div>
+                        </div>
+                        <div class="col">
+
+                              <div class="form-check d-flex justify-content-center align-items-center">
+                                    <input class="form-check-input mx-2" type="radio" value="2" name="year" id="year2">
+                                    <label class="form-check-label" for="year2">
+                                          2<sup>nd</sup> Year
+                                    </label>
+                              </div>
+                        </div>
+                        <div class="col">
+
+                              <div class="form-check d-flex justify-content-center align-items-center">
+                                    <input class="form-check-input mx-2" type="radio" value="3" name="year" id="year3">
+                                    <label class="form-check-label" for="year3">
+                                          3<sup>rd</sup> Year
+                                    </label>
+                              </div>
+                        </div>
+                        <div class="col">
+
+                              <div class="form-check d-flex justify-content-center align-items-center">
+                                    <input class="form-check-input mx-2" type="radio" value="4" name="year" id="year4">
+                                    <label class="form-check-label" for="year4">
+                                          4<sup>th</sup> Year
+                                    </label>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="row row-cols-lg-2 justify-content-center align-items-center gx-5 w-100 disappear"
+                        id="main">
+                        <div class="col-lg-5">
+                              <div class="row">
+                                    <h2 class="display-6 my-5">Check your courses</h2>
+                              </div>
+                              <div class="row" id="courses"></div>
+                              <div class="row">
+                                    <div class="col-lg-7 my-2">
+                                          <h3 id="total-gpa" class="d-none"></h3>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-7">
+                              <form class="was-validated">
+                                    <div id="grade">
+                                          <h2 class="d-none" id="enter-your-grade">Enter your <span class="text-primary">GRADES</span></h2>
+                                    </div>
+                                    <button type="submit" class="d-none">Calculate</button>
+                                    <button id="again" class="d-none">New Calculation</button>
+                              </form>
+                        </div>
+                  </div>
+            </div>
+            <footer class=" mt-5 py-2">
+
+                  <div
+                        class="d-flex justify-content-center align-items-center bg-dark text-white">
+                        <p class="mt-2"> &copy; 2022 Copyright | Designed by:
+                              <cite class="text-primary">Bavly Ashraf</cite></p>
+                  </div>
+            </footer>
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+</script>
+<script src="/grade-calculations.js"></script>
+
+</html>

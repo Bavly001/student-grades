@@ -1,0 +1,67 @@
+.bg-black .bg-image {
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     filter: blur(5px) saturate(2.5);
+     opacity: 0.2;
+}
+.content {
+     position: absolute;
+     top: 0;
+     left: 0;
+}
+.form-check-label {
+     font-size: 20px;
+}
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+     -moz-appearance: textfield;
+}
+
+@keyframes appear {
+      0%{display: none; opacity: 0;}
+      25%{display: block; opacity: 0.1}
+      50%{display: block; opacity: 0.3;}
+      75%{display: block; opacity: 0.5}
+      100%{display: block; opacity: 1}
+}
+
+.appear{
+      display: block;
+}
+.appear-not{
+      animation: appear 3s ease-in alternate-reverse;
+      display: none;
+}
+.disappear {
+      display: none;
+}
+.disappear-not{
+      animation: appear 3s ease-in;
+      transition: 1s;
+}
+
+#header{
+      transition: 1s;
+}
+.up{
+      transition: 1s;
+      transform: translateY(-1100%) scale(0.8);
+      position: absolute;
+      
+}
+footer{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 7vh;
+      padding: 15px 0;
+}
